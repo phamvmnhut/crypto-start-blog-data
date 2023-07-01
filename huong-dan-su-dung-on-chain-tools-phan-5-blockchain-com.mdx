@@ -1,0 +1,363 @@
+---
+title: 'Hướng dẫn sử dụng On-chain Tools (Phần 5): Blockchain.com'
+thumbnail: 'https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628092454_original_38.webp'
+date: '6/6/2023'
+tags: ['crypto']
+summary: 'Sau các công cụ on-chain phổ biến trên Ethereum, hãy cùng đến với trình explorer dành riêng cho mạng Bitcoin, mang tên Blockchain.com.'
+---
+
+
+# Hướng dẫn sử dụng On-chain Tools (Phần 5): Blockchain.com
+[Cameron](/author/null/)-28/06/2023
+
+
+
+
+
+
+
+[](/author/null/)-28/06/2023
+
+
+
+
+
+**Sau các công cụ on-chain phổ biến trên Ethereum, hãy cùng đến với trình explorer dành riêng cho mạng Bitcoin, mang tên Blockchain.com.** 
+
+![](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100327-0fedd932-2764-4d3d-8cfd-5cfb84569850-27.jpg)Hướng dẫn sử dụng On-chain Tools (Phần 5): Blockchain.com
+
+ 
+
+ - [Hướng dẫn sử dụng On-chain Tools (Phần 0): Sơ lược về các công cụ phân tích dữ liệu on-chain](https://coin68.com/huong-dan-su-dung-on-chain-tools/) 
+ - [Hướng dẫn sử dụng On-chain Tools (Phần 1): Arkham Intelligence](https://coin68.com/huong-dan-su-dung-arkham-intelligence/) 
+ - [Hướng dẫn sử dụng On-chain Tools (Phần 2): Etherscan](https://coin68.com/huong-dan-su-dung-giao-dien-etherscan/) 
+ - [Hướng dẫn sử dụng On-chain Tools (Phần 3): Watchers](https://coin68.com/huong-dan-su-dung-watchers/) 
+ - [Hướng dẫn sử dụng On-chain Tools (Phần 4): Dune Analytics](https://coin68.com/huong-dan-su-dung-dune-analytics/)
+
+
+
+## 1. Giới thiệu về Blockchain.com
+Blockchain.com là một nền tảng phổ biến được thành lập vào năm 2011. Nó cung cấp dịch vụ ví Blockchain Wallet, cho phép người dùng lưu trữ, gửi và nhận các loại crypto như Bitcoin. Nền tảng này đặc biệt chú trọng đến việc kiểm soát của người dùng bằng cách cho phép cá nhân giữ quyền sở hữu đầy đủ trên các khóa riêng tư của mình.
+
+Ngoài dịch vụ ví, Blockchain.com cung cấp các công cụ khám phá blockchain thời gian thực (explorer), cho phép người dùng xem dữ liệu giao dịch, thông tin block và xu hướng thị trường. Blockchain.com còn có sàn giao dịch tiền mã hoá để giao dịch các tài sản với mức phí cạnh tranh và tính thanh khoản.
+
+Với giao diện thân thiện với người dùng, các biện pháp bảo mật và cam kết về quyền riêng tư, Blockchain.com đã thu hút được một lượng người dùng lớn. Blockchain.com cung cấp nhiều ứng dụng với các tính năng tiêu biểu:
+
+
+
+ - **Wallet** : Ví do Blockchain.com cung cấp là một ví tiền mã hoá an toàn để lưu trữ các loại crypto như Bitcoin. Người dùng có thể quản lý tài sản của mình, thực hiện giao dịch và truy cập vào lịch sử giao dịch trong khi giữ quyền kiểm soát đầy đủ trên các khóa riêng tư.
+
+ 
+ - **Blockchain Explorer** : Blockchain.com cho phép người dùng khám phá và xem dữ liệu trên mạng lưới bao gồm thông tin như xác nhận giao dịch, chiều cao khối và số dư ví. Người dùng có thể phân tích xu hướng thị trường, theo dõi giao dịch và có cái nhìn sâu sắc về hoạt động trên blockchain.
+
+ 
+ - **Sàn giao dịch** : Blockchain.com đã giới thiệu sàn giao dịch cho phép người dùng giao dịch các tài sản. Nền tảng này tạo điều kiện cho việc trao đổi tiền điện tử với mức phí cạnh tranh và tính thanh khoản cao.
+
+ 
+ - **Giải pháp API** : Blockchain.com cung cấp công cụ và tài nguyên cho nhà phát triển để xây dựng ứng dụng phi tập trung (DApps) trên mạng lưới Bitcoin. Nhà phát triển có thể tận dụng cơ sở hạ tầng và các API mà Blockchain.com cung cấp để tạo ra các ứng dụng sử dụng lợi ích của công nghệ blockchain.
+
+ 
+ - **Giải pháp cho các tổ chức** : Blockchain.com phục vụ khách hàng tổ chức bằng cách cung cấp các giải pháp tùy chỉnh cho nhu cầu liên quan đến crypto. Điều này bao gồm dịch vụ lưu giữ tài sản, cung cấp thanh khoản và truy cập vào các công cụ giao dịch cấp thương mại, mang lại cho các tổ chức một nền tảng an toàn và đáng tin cậy để tương tác với tiền điện tử.
+
+
+
+## 2. Tìm hiểu về ứng dụng Blockchain Explorer
+
+### 2.1. Homepage
+Khi bạn vào blockchain.com giao diện chính gồm những mục sau:
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100328-0cce683d-8b1e-4c32-81c6-5b79d4336df8-127.jpg)
+
+**1. Search:** Tìm ví, giao dịch và hash. Lưu ý Blockchain.com chỉ hỗ trợ chain ETH và Bitcoin nên nếu bạn tìm giao dịch của những chain khác sẽ không ra kết quả.
+
+**2. Độ sáng:** Chuyển đổi qua lại giữa chế độ sáng và tối.
+
+**3. Sign in:** Đăng nhập vào ví hoặc sàn giao dịch.
+
+**4. Giá:** Update giá và biến động giá token.
+
+**5. Menu:** Danh sách các tính năng chính của blockchain.com như giá, biểu đồ, NFT, Defi, thư viện học thuật, tin tức, khu vực dành cho developer (nhà phát triển), ví và sàn giao dịch.
+
+**6. Shortcut đến blockchain:** Dẫn bạn đến trang thông số liên quan đến mạng lưới BTC, ETH và Bitcoin Cash.
+
+**7. Thông tin tiêu biểu:** Tổng hợp thông tin đáng chú ý từ các phần của menu như giá token, khối được đào gần đây nhất, giao dịch BTC và tin tức thị trường. Để đi vào chi tiết từng phần bạn chỉ cần nhấn vào mũi tên đen bên phải mỗi thông tin.
+
+Các phần dưới đây sẽ đi qua nội dung từng tính năng trên menu của Blockchain.com.
+
+
+### 2.2. Prices và DeFi
+Khi đến trang Prices của Blockchain.com, bạn sẽ thấy được những thông tin cơ bản như tổng số lượng tài sản mà Blockchain.com đang cung cấp thông tin, biểu đồ so sánh đường giá giữa BTC và ETH.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100328-988c9bb7-3089-4af5-a369-f11dc0ba2492-192.jpg)Biểu đồ giá
+
+Nếu muốn xem Heatmap bạn chỉ cần ấn vào biểu tượng trong khung đỏ.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100328-59ca37eb-4357-4907-acc3-0aebc4fa7528-100.jpg)Biểu đồ Heatmap
+
+Bên dưới là danh sách giá token với biến động theo 1h, 1 ngày, vốn hóa thị trường, volume giao dịch 24h, cung lưu thông, biểu đồ tổng quan giá trong 7 ngày và nếu muốn giao dịch ngay thì chọn Trade (không áp dụng đối với mục DeFi). Lúc này bạn sẽ được chuyển hướng đến sàn giao dịch của Blockchain.com.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100328-45a59d41-5aca-4455-ac74-b18a3f778748-167.jpg)Danh sách giá
+
+Để xem thông tin chi tiết, bấm chọn token bạn muốn. Khi đó bạn sẽ được chuyển hướng đến một trang khác. Như bên dưới là thông tin về BNB bao gồm giới thiệu sơ lược về token, biểu đồ giá tuỳ chỉnh theo thời gian, thông tin thị trường, tiểu sử, đường dẫn đến link chính thức của token và ROI đầu tư theo thời gian
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100328-593b2d85-bb99-433c-ae1f-58bd001b6f2f-112.jpg)Biểu đồ giá BNB
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100328-248b9593-f44a-47c1-9ca3-5bf3cb9705b3-7.jpg)Thông tin thị trường
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100329-7ba90c05-d457-4b4d-b2d1-732469bce39c-153.jpg)Tiểu sử và link dự án
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100329-c6287343-ddc6-4aaf-afde-333188f6e342-182.jpg)ROI token theo thời gian và bảng chuyển đổi USD sang token
+
+Riêng với BTC và ETH thông tin không chỉ dừng lại ở việc cập nhật giá, vốn hoá và cung lưu thông mà còn đưa ra các thông tin chi tiết về Block.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100329-d2b1615e-77c6-4ac3-a99b-ae1da4ae757d-176.jpg)Block numbers
+
+Nhấn vào một khối bất kì bạn sẽ đến trang thông tin chi tiết của khối đó. Phần này sẽ được nói rõ ở mục 3.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100329-269de5b6-ee35-44c6-bfb8-538e13e3bc4c-195.jpg)Trang thông tin một khối
+
+Lưu ý:Thông tin trong mục DeFi sẽ giống gần 90% với Prices.
+
+
+### 2.3. Charts
+Khi nói đến việc phân tích mạng lưới Bitcoin, Blockchain.com nổi bật như một nguồn thông tin đáng tin cậy khi cung cấp biểu đồ về mạng lưới. Nếu bạn tập trung vào Bitcoin, các công cụ biểu đồ của Blockchain.com trở thành một nguồn không thể thiếu đối với những người muốn hiểu và phân tích cách hoạt động phức tạp của mạng lưới BTC. Cho dù bạn là một nhà đầu tư, nhà nghiên cứu hay chỉ đơn giản là tò mò về hiệu suất của Bitcoin, những biểu đồ này cung cấp thông tin hữu ích phục vụ quá trình phân tích và đưa ra quyết định của bạn.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100329-783bf2b4-6d25-4df5-bff1-ec55492f239b-99.jpg)Mục lục các loại biểu đồ
+
+Charts được chia thành 5 nhóm chính:
+
+**1/ Currency Statistics:** thể hiện các thông tin về tổng cung lưu thông BTC, giá thị trường, vốn hoá thị trường và volume giao dịch.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100329-90ba3919-8bcb-4d75-92f5-334fe800035b-34.jpg)Các biểu đồ Currency Statistics
+
+Để mở rộng chỉ báo muốn xem bạn chỉ cần nhấn vào chỉ báo đó và được dẫn hướng đến trang chi tiết.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100329-48d5d449-13e6-4309-935b-420bfe615fa4-143.jpg)Biểu đồ Market Price (USD)
+
+Bạn có thể tùy chỉnh định dạng biểu đồ tại vùng khoanh đỏ như chỉnh thời gian, màu sắc,...Bên dưới biểu đồ sẽ có phần giải thích ý nghĩa của biểu đồ đó, chú giải cũng như phương pháp tính toán dữ liệu của Blockchain.com. Nếu muốn tải dữ liệu thì bấm Download JSON.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100329-e8eb7259-ac02-4984-8790-b66317cb2b96-26.jpg)Giải thích và phương pháp lấy dữ liệu
+
+**2/ Block Details:** thể hiện các biểu đồ liên quan đến block trên mạng lưới như kích thước khối, số giao dịch trung bình mỗi khối, chi trả trung bình mỗi khối, tổng giao dịch trên mạng lưới và thời gian trung bình để giao dịch được bao gồm trong một khối và thêm vào ledger công khai.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100329-6d45276e-837d-4671-b508-0a69c93c438f-103.jpg)Biểu đồ của Block Details
+
+**3/ Mining Information:**  
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100330-be00540e-b2f2-4caa-8417-17453b84d07c-160.jpg)Biểu đồ Mining Information
+
+**4/ Network Activity:**  
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100330-d2c1354f-0495-48b2-96d0-068e0adf0801-34.jpg)Biểu đồ Network Activity
+
+**5/ Market Signals** **:** 
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100330-296ae288-721c-44be-994c-b714ff5a938e-184.jpg)Biểu đồ Market Signals
+
+
+### 2.4. NFT
+Mục NFT này Blockchain.com cung cấp danh sách NFT ID được giao dịch trong 24h qua. Bấm vào ID bạn muốn xem, bạn sẽ được dẫn hướng đến trang giao dịch ID đó trên OpenSea.
+
+[Etherscan](https://coin68.com/huong-dan-su-dung-giao-dien-etherscan/)[Watchers](https://coin68.com/huong-dan-su-dung-watchers/)[Dune Analytics](https://coin68.com/huong-dan-su-dung-dune-analytics/)
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100330-b62bd1bc-7077-476e-a4bc-72fc46da26aa-117.jpg)Danh sách NFT mua bán trong 24h
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100330-594cb55e-1688-4ccb-baf5-393c6ed2d2bd-200.jpg)Giao dịch trên OpenSea
+
+
+### 2.5. Academy, News và Developers
+
+
+ - **Academy**  
+
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100330-d8a3f107-da90-4b0b-be0c-615d947f1bfe-60.jpg)Mục Academy
+
+
+
+ - **News** **:** 
+
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100330-2b1051fa-3b83-4eae-924a-846c0464481e-140.jpg)News
+
+
+
+ - **Developers:** cung cấp giải pháp API miễn phí để thu hút developer xây dựng các Dapps trên mạng lưới Bitcoin. API được chia thành nhiều lựa chọn khác nhau tùy theo nhu cầu và với mỗi tuỳ chọn Blockchain.com còn đưa ra các đoạn code hỗ trợ kéo API.
+
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100331-8b7fa8b2-4a97-4b77-8823-21c33a9388b5-85.jpg)Các loại API
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100331-6c800e4d-a52a-4f4c-8e03-fb463cf89286-112.jpg)Code hỗ trợ kéo API
+
+Nếu muốn lấy data về mạng lưới Bitcoin như dữ liệu cho block, giao dịch, địa chỉ ví, outputs và balance bạn có thể chọn Blockchain data API.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100331-97c9c3b5-ba8f-4434-9266-eaf4409451f0-147.jpg)Chọn dữ liệu muốn lấy tại Blockchain data API
+
+
+### **2.6. Wallet và Exchange** 
+
+
+ - **Wallet**  
+
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100331-84e5b965-2cef-47a7-b6a8-f0a2e56071ba-83.jpg)Giao diện ví trên điện thoại
+
+
+
+ - **Exchange** khi muốn giao dịch với Blockchain.com, bạn chỉ cần nhấn tab Exchange bên trái màn hình và được dẫn hướng đến một trang mới. Tương tự như Wallet, bạn cần đăng ký tài khoản cho người dùng mới và đăng nhập để thực hiện giao dịch. Trading trên sàn Blockchain được đánh giá là nhanh, phí thấp và giao diện thân thiện.
+
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100331-8868d3e4-b3ef-4f8f-bd1f-4cdff15a65c8-142.jpg)Giao diện sàn trên điện thoại và PC
+
+
+## 3. Cách đọc giao dịch Bitcoin với Blockchain.com
+
+### 3.1. UTXO model
+**Unspent Transaction Output (UTXO)** 
+
+Nói cách khác, giao dịch Bitcoin được tạo thành từ các đầu vào và đầu ra. Mỗi khi một giao dịch được thực hiện, người dùng lấy một hoặc nhiều UTXO làm đầu vào. Tiếp theo, người dùng cung cấp chữ ký số của họ để xác nhận sở hữu các đầu vào này, dẫn đến các đầu ra. Các UTXO đã được sử dụng trong giao dịch này hiện được coi là "đã tiêu" và không thể được sử dụng nữa. Trong khi đó, các đầu ra từ giao dịch trở thành UTXOs mới - có thể được tiêu trong một giao dịch mới sau này.
+
+**Ví dụ:** 
+
+Trong blockchain, giao dịch sẽ tạo ra:
+
+2 BTC - Được gửi cho Alice.
+
+2,99 BTC - Được trả lại cho Bob.
+
+0,01 BTC - Phí cho người khai thác để xử lý giao dịch.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100331-5e32995b-3cd0-466d-ac69-19160d551392-154.jpg)
+
+Lưu ý:Trong một khối sẽ có giao dịch đặc biệt, đó là giao dịch coinbase. Những giao dịch này sẽ không có input. Bởi vì, trước khi tham gia vào việc thêm các khối mới, miner phải tạo ra một giao dịch coinbase. Giao dịch này sẽ chỉ định địa chỉ ví mà phần thưởng khối và phí khai thác sẽ được gửi đến. Vì phần thưởng khối là một số lượng BTC mới được tạo ra, nên không có input trong giao dịch này. Giao dịch coinbase này là một bộ phận riêng của Bitcoin, chứ không có liên hệ gì đến sàn Coinbase.
+
+
+### 3.2. Tìm hiểu thông tin trang Bitcoin trên Blockchain.com
+Giao diện riêng cho Bitcoin gồm các thông tin cơ bản sau:
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100331-321b2d62-1b6c-47c6-b19c-c995bef584b6-103.jpg)Giao diện thông tin một block
+
+**1. Biểu đồ giá** 
+
+**2. Số block number** 
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100332-25d12e8e-8833-41de-90a9-4ef79169b472-127.jpg)Giao diện thông tin một block
+
+**3. Thông tin thị trường** 
+
+**4. Thông tin về BTC** 
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100332-19bdfc75-d479-4bd0-a57c-c7a9d4e16f53-142.jpg)Giao diện thông tin một block
+
+**5. ROI:** Lợi nhuận BTC theo thời gian
+
+**6. Latest Transactions:**  
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100332-44429910-0c64-493a-a36e-adb27a879570-28.jpg)Biểu đồ Mempool Bytes Per Fee Level
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100332-7deb5139-5bcb-4e33-a275-4f047ec61056-75.jpg)Biểu đồ Average Transaction Time và Confirmation Per Day
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100332-0df59223-a4fd-46fa-a741-2f08aafa792b-112.jpg)Biểu đồ Total Transactions và Average Transaction Time Per Block
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100332-f66c2e5d-202f-4cd7-ae8c-9b6fc64f94cd-119.jpg)Biểu đồ Unconfirmed BTC Transactions
+
+**7. Latest Blocks:** danh sách block mới được tạo ra. Mở rộng danh sách block, Blockchain.com dẫn hướng đến thông tin cụ thể hơn như số block, hash, tên thợ đào (nếu không có định danh sẽ là Unknown), thời gian đào, số giao dịch trong khối, nounce, tỉ lệ fill khối, kích cỡ khối, tổng BTC đã gửi đi và tổng số phí.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100332-00de6615-02f1-43ee-aa5a-26072498f857-174.jpg)Danh sách các Block mới
+
+Một block bao gồm nhiều thông tin:
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100333-e5a5f2c0-6d85-428e-95c7-673750deaee0-159.jpg)Thông tin một Block
+
+a. Nếu khối này được đào bởi miner có tên như Binance thì sẽ có biểu tượng của Binance, còn lại nếu thợ đào là Unknown thì sẽ không có biểu tượng nào.
+
+b. Số khối đang xem.
+
+c. Thông tin tổng hợp về khối như có bao nhiêu BTC được chuyển trong khối, số lượng BTC giao dịch, phần thưởng nhận được.
+
+d. Thông chi tiết của khối.
+
+e. Giao dịch trong khối, bạn có thể filter theo Last (giao dịch cuối), First (giao dịch đầu), thứ tự tăng/giảm dần theo giá trị giao dịch, thứ tự tăng/giảm dần theo phí giao dịch.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100333-e3618162-0cb0-48ab-b0da-f657a7b654e6-173.jpg)Filter giao dịch trong khối
+
+Nếu bạn đã nắm được cách thức hoạt động của UTXO thì bạn sẽ dễ dàng đọc được giao dịch BTC.
+
+**Ví dụ:** 
+
+
+
+ - Địa chỉ ví bc1q…vvzej có 0.132 BTC và muốn chuyển đến ví 1GEj…eWTH 0.114 BTC.
+
+ 
+ - Theo mô hình UTXO thì ví bc1q…vvzej sẽ phải chuyển hết toàn bộ số dư của ví và chỉ định 0.114 BTC chuyển đến ví bc1q…vvzej.
+
+ 
+ - Phần còn lại được chuyển ngược lại cho ví bc1q…vvzej.
+
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100333-b9f71692-3a66-4dbb-b23e-b7f9dd48da4d-43.jpg)Ví dụ một giao dịch trong block
+
+
+### 3.3. Giải thích giao dịch chuyển 15.000 BTC của Binance
+[vụ kiện với SEC](https://coin68.com/sec-kien-binance-va-ceo-changpeng-zhao/)
+
+
+
+[June 19, 2023](https://twitter.com/binance/status/1670748243188219904?ref_src=twsrc%5Etfw)
+
+Thú vị hơn, một tài khoản Twitter khác đã phản hồi tweet của Binance rằng ngoài 15.000 BTC được gửi đến địa chỉ ví như họ thông báo còn chuyển 115.000 BTC (3.47 tỉ USD) đến địa chỉ 39884E3j6KZj82FK4vcCrkUvWYL5MQaS3v.
+
+Kiểm tra giao dịch trên Blockchain.com thì thấy giao dịch gồm có 6 inputs với tổng ~130.000 BTC, 2 outputs ~ 130.000 BTC. Để hiểu rõ thì chúng ta chia ra giải thích từng giao dịch như sau:
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100333-19926f54-71c3-4caa-8c0b-36af50e7e9a0-21.jpg)Giao dịch chuyển 15.000 BTC của Binance
+
+1. Trong 6 inputs đó có 4 địa chỉ ví của Binance 3 và 2 địa chỉ ví không được gắn label.
+
+2. Check lịch sử giao dịch của 2 ví này thì thấy được ban đầu Binance 3 đã chuyển 127.351 BTC cho ví 3JJm...
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100333-af61732a-080c-4320-9e60-d1859f8753a0-108.jpg)Giao dịch chuyển BTC cho ví 3JJm
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100333-03ab7c1f-f7da-4b90-b70f-565226b11b4f-195.jpg)Giao dịch chuyển BTC cho ví 3JJm
+
+
+
+3. Sau đó, Binance thực hiện chuyển BTC từ ví Binance 3 và ví 3 JJm qua cho ví 38Xn (117.351 BTC) và ví Binance 4 (10.000 BTC).
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100333-7b11f334-bf06-477a-9c0e-dc33c06efa0d-26.jpg)Giao dịch chuyển BTC cho ví 38Xn
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100333-aaf24b7e-fb79-4285-a964-5edc3bde35a0-51.jpg)Giao dịch chuyển BTC cho ví 38Xn
+
+5. Cuối cùng, Binance thực hiện chuyển BTC từ các ví đến ví 1Pza (15.000 BTC) như công bố trên Twitter. Số lượng còn lại chuyển đến một ví khác là 3988. Hiện tại ví này vẫn chưa có hoạt động gì khác.
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100333-a5f60c05-3458-479f-ae1c-375fec5ff17a-115.jpg)Giao dịch chuyển 15.000 BTC
+
+![undefined](https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/20230628100333-2c66a8ae-4673-450a-b761-18a507b8bf07-163.jpg)Giao dịch chuyển 15.000 BTC
+
+Nhìn vào sơ đồ này bạn sẽ có 3 câu hỏi:
+
+
+
+ - Vì sao Binance không trực tiếp chuyển từ Binance 3 đến ví 1PZa. Thực tế, nếu nhìn vào giao dịch chuyển cho 3JJm bạn sẽ thấy thời gian Binance 3 chuyển cho ví này là vào tháng 11 năm 2022, còn giao dịch cho ví 38Xn là tháng 5 năm nay. Cả 2 ví 3JJm và 38Xn có thể là ví của Binance nhưng không được gắn label.
+
+ 
+ - Hơn nữa tại sao Binance phải thực hiện lệnh chuyển từ 6 ví là vì nếu tính tổng 4 ví Binance 3 thì chỉ có 12.826 BTC không đủ để thực hiện giao dịch. Chính vì vậy Binance phải thực hiện chuyển từ nhiều ví. Theo mô hình UTXO thì khi muốn chuyển một số lượng BTC nào đó cho ví khác thì tất cả balance sẽ được chuyển đi và phân tách đến các ví chỉ định.
+
+ 
+ - Tại sao số dư còn lại không chuyển về lại Binance 3 hay 2 ví kia như là một change. Có thể vì Binance muốn tập trung số BTC còn lại vào 1 ví mới.
+
+
+
+## Tổng kết
+Trên đây là những thông tin về cách sử dụng Blockchain.com đặc biệt là cách đọc giao dịch BTC. Việc đọc giao dịch BTC không giống như đọc giao dịch trên Etherscan hay BSCscan nhưng Coin68 hi vọng với ví dụ về trường hợp chuyển BTC của Binance sẽ giúp bạn dễ dàng hình dung hơn.
+
+**Cameron** 
+
+**Xem lại:** 
+
+
+
+[Cameron
+
+](/author/null/)-28/06/2023
+
