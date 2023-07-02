@@ -68,7 +68,7 @@ const STORNG_END_FLAG = "strong_end_flag"
 const STRONG_STRUCTURE = `${STORNG_START_FLAG}here${STORNG_END_FLAG}`;
 
 function main() {
-  request('https://coin68.com/tong-hop-nhung-su-kien-noi-bat-trong-quy-22023/', (error, response, html) => {
+  request('https://coin68.com/san-dex-pancakeswap-chinh-thuc-khoi-chay-tren-polygon-zkevm/', (error, response, html) => {
     if (!error && response.statusCode == 200) {
       const $ = load(html);
       const h1First = $('h1').first();
