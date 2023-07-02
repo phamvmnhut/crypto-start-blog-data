@@ -2,8 +2,8 @@ import { load } from 'cheerio';
 import request from 'request-promise';
 import { writeFileSync, readFileSync, createWriteStream } from 'fs';
 
-function download(uri, filename, callback){
-  request.head(uri, function(err, res, body){
+function download(uri, filename, callback) {
+  request.head(uri, function (err, res, body) {
     console.log('content-type:', res.headers['content-type']);
     console.log('content-length:', res.headers['content-length']);
 
@@ -78,25 +78,25 @@ function main() {
 
       const urlThumnail = headData.find("meta[itemprop=image]").prop("content");
       const imageName = urlThumnail.split('/images/')[1];
-      download(urlThumnail, imageName, function(){
+      download(urlThumnail, imageName, function () {
         console.log('downloaded' + imageName);
       });
       const summaryData = headData.find("meta[property=og:description]").prop("content");
       let dateNow = new Date();
-    
+
       const data = handleHtml(root);
       const finalFormat = data
-      .replaceAll(LI_FLAG, "\n - ")
-      .replaceAll(DIV_FLAG, "\n\n")
-      .replaceAll(P_FLAG, "\n\n")
-      .replaceAll(STORNG_START_FLAG, "**")
-      .replaceAll(STORNG_END_FLAG, "** ")
-      .replaceAll("****", "")
+        .replaceAll(LI_FLAG, "\n - ")
+        .replaceAll(DIV_FLAG, "\n\n")
+        .replaceAll(P_FLAG, "\n\n")
+        .replaceAll(STORNG_START_FLAG, "**")
+        .replaceAll(STORNG_END_FLAG, "** ")
+        .replaceAll("****", "")
 
       const metaData = MDX_STRUCTURE
         .replace("__title__", title)
         .replace("__thumnail__", "https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/" + imageName)
-        .replace("__date__", `${dateNow.getDate()}/${dateNow.getMonth() + 1 }/${dateNow.getFullYear()}`)
+        .replace("__date__", `${dateNow.getMonth() + 1}/${dateNow.getDate()}/${dateNow.getFullYear()}`)
         .replace("__tag__", "['crypto']")
         .replace("__summary__", summaryData)
 
@@ -155,7 +155,7 @@ function handleTag(tagName, data, cheerioElement) {
     const srcData = cheerioElement.prop("src");
     const imageName = srcData.split('/images/')[1];
     const altTextData = cheerioElement.prop("alt");
-    download(srcData, imageName, function(){
+    download(srcData, imageName, function () {
       console.log('downloaded' + imageName);
     });
     return IMG_STRUCTURE.replace("__alt_text__", altTextData).replace("__fileName__", imageName);
@@ -205,12 +205,12 @@ async function test() {
 
   const data = handleHtml(root);
   const finalFormat = data
-  .replaceAll(LI_FLAG, "\n - ")
-  .replaceAll(DIV_FLAG, "\n\n")
-  .replaceAll(P_FLAG, "\n\n")
-  .replaceAll(STORNG_START_FLAG, "**")
-  .replaceAll(STORNG_END_FLAG, "** ")
-  .replaceAll("****", "")
+    .replaceAll(LI_FLAG, "\n - ")
+    .replaceAll(DIV_FLAG, "\n\n")
+    .replaceAll(P_FLAG, "\n\n")
+    .replaceAll(STORNG_START_FLAG, "**")
+    .replaceAll(STORNG_END_FLAG, "** ")
+    .replaceAll("****", "")
   writeFileSync("test.md", finalFormat);
 }
 
@@ -219,15 +219,15 @@ async function test() {
 function stringToSlug(str) {
   // remove accents
   var from = "àáãảạăằắẳẵặâầấẩẫậèéẻẽẹêềếểễệđùúủũụưừứửữựòóỏõọôồốổỗộơờớởỡợìíỉĩịäëïîöüûñçýỳỹỵỷ",
-      to   = "aaaaaaaaaaaaaaaaaeeeeeeeeeeeduuuuuuuuuuuoooooooooooooooooiiiiiaeiiouuncyyyyy";
-  for (var i=0, l=from.length ; i < l ; i++) {
+    to = "aaaaaaaaaaaaaaaaaeeeeeeeeeeeduuuuuuuuuuuoooooooooooooooooiiiiiaeiiouuncyyyyy";
+  for (var i = 0, l = from.length; i < l; i++) {
     str = str.replace(RegExp(from[i], "gi"), to[i]);
   }
 
   str = str.toLowerCase()
-        .trim()
-        .replace(/[^a-z0-9\-]/g, '-')
-        .replace(/-+/g, '-');
+    .trim()
+    .replace(/[^a-z0-9\-]/g, '-')
+    .replace(/-+/g, '-');
 
   return str;
 }
