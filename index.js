@@ -38,6 +38,7 @@ const H6_TAG = "h6";
 const H6_STRUCTURE = "\n###### here\n";
 
 const BR_TAG = "br";
+const IFRAME_TAG = "iframe";
 
 const P_TAG = "p";
 const P_FLAG = "p_flag";
@@ -67,7 +68,7 @@ const STORNG_END_FLAG = "strong_end_flag"
 const STRONG_STRUCTURE = `${STORNG_START_FLAG}here${STORNG_END_FLAG}`;
 
 function main() {
-  request('https://coin68.com/huong-dan-su-dung-on-chain-tools/', (error, response, html) => {
+  request('https://coin68.com/tong-hop-nhung-su-kien-noi-bat-trong-quy-22023/', (error, response, html) => {
     if (!error && response.statusCode == 200) {
       const $ = load(html);
       const h1First = $('h1').first();
@@ -163,6 +164,9 @@ function handleTag(tagName, data, cheerioElement) {
   if (tagName == STRONG_TAG) {
     return STRONG_STRUCTURE.replace(HERE, formatData);
   }
+  if (tagName == IFRAME_TAG) {
+    return ""
+  }
   if (tagName == SPAN_TAG || tagName == BR_TAG) {
     return formatData;
   }
@@ -177,13 +181,17 @@ function handleHtml(cheerioElement) {
   let data = ""
   listChildren.each(function (index, ele) {
     let tagName = ele.tagName;
-    let loadEleAgain = load(ele)(tagName);
+    console.log(tagName);
+    if (!tagName.includes(":p")) {
 
-    let elementCount = loadEleAgain.children().length;
-    if (elementCount == 0) {
-      data += handleTag(tagName, loadEleAgain.text(), loadEleAgain)
-    } else {
-      data += handleTag(tagName, handleHtml(loadEleAgain), loadEleAgain);
+      let loadEleAgain = load(ele)(tagName);
+
+      let elementCount = loadEleAgain.children().length;
+      if (elementCount == 0) {
+        data += handleTag(tagName, loadEleAgain.text(), loadEleAgain)
+      } else {
+        data += handleTag(tagName, handleHtml(loadEleAgain), loadEleAgain);
+      }
     }
   })
   return data;
