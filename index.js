@@ -82,7 +82,7 @@ function main() {
         console.log('downloaded' + imageName);
       });
       const summaryData = headData.find("meta[property=og:description]").prop("content");
-      const dateNow = new Date();
+      let dateNow = new Date();
     
       const data = handleHtml(root);
       const finalFormat = data
@@ -96,7 +96,7 @@ function main() {
       const metaData = MDX_STRUCTURE
         .replace("__title__", title)
         .replace("__thumnail__", "https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/" + imageName)
-        .replace("__date__", dateNow.getDay() + "/" + dateNow.getMonth() + "/" + dateNow.getFullYear())
+        .replace("__date__", `${dateNow.getDate()}/${dateNow.getMonth() + 1 }/${dateNow.getFullYear()}`)
         .replace("__tag__", "['crypto']")
         .replace("__summary__", summaryData)
 
