@@ -68,7 +68,7 @@ const STORNG_END_FLAG = "strong_end_flag"
 const STRONG_STRUCTURE = `${STORNG_START_FLAG}here${STORNG_END_FLAG}`;
 
 function main() {
-  request('https://coin68.com/gia-san-cac-bo-suu-tap-nft-lon-tiep-tuc-giam-sau/', (error, response, html) => {
+  request('https://coin68.com/cac-ngan-hang-thu-nghiem-cbdc-bang-san-pham-cua-curve-finance/', (error, response, html) => {
     if (!error && response.statusCode == 200) {
       const $ = load(html);
       const h1First = $('h1').first();
@@ -97,7 +97,7 @@ function main() {
         .replace("__title__", title)
         .replace("__thumnail__", "https://raw.githubusercontent.com/phamvmnhut/crypto-start-blog-data/main/images/" + imageName)
         .replace("__date__", `${dateNow.getMonth() + 1}/${dateNow.getDate()}/${dateNow.getFullYear()}`)
-        .replace("__tag__", "['crypto', 'hot' ]")
+        .replace("__tag__", "['crypto', 'hot', 'airdrop' ]")
         .replace("__summary__", summaryData)
 
       writeFileSync(stringToSlug(title) + ".mdx", metaData + finalFormat);
